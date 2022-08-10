@@ -1,0 +1,14 @@
+{% extends 'Cliente/base.html' %}
+
+{% block contenido %} 
+<h1> Procedimientos destacados y sus costos: </h1>
+
+{{mensaje}}
+    {% for i in procedimientos %} 
+        <p> {{i.nombre_proce}} | {{i.costo}} Dolares </p>
+    {% endfor %}
+{% endblock  %}
+
+{% block titulo %}
+Procedimientos
+{% endblock  %}

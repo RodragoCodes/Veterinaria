@@ -1,0 +1,13 @@
+{% extends 'Cliente/base.html' %}
+{% block contenido %} 
+<h1> Nuestros ultimos clientes Felices son: </h1>
+{{mensaje}}
+    {% for i in clientes %} 
+        <p> {{i.nombre}}</p>
+    {% endfor %}
+{% endblock  %}
+
+{% block titulo %}
+Cliente
+{% endblock  %}
+

@@ -1,0 +1,14 @@
+{% extends 'Cliente/base.html' %}
+
+{% block contenido %} 
+<h1> Nuestras ultimas mascotas atendidas: </h1>
+
+{{mensaje}}
+    {% for i in mascotas %} 
+        <p> {{i.nombre_mascota}} | {{i.tipo}} | {{i.edad}} años de edad </p> 
+    {% endfor %}
+{% endblock  %}
+
+{% block titulo %}
+Mascotas
+{% endblock  %}
